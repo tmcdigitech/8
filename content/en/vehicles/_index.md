@@ -7,3 +7,4 @@ menu:
         weight: 10
         pre: <i class='fa fa-car-burst'></i>
 ---
+We make autonomous vehicles!
