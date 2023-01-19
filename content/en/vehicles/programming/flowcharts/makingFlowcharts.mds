@@ -1,0 +1,35 @@
+# Making flowcharts
+
+*Click on this presentation and press 'f' for full screen.*
+
+
+
+We use [app.diagrams.net](https://app.diagrams.net/) to
+make our flowcharts.
+
+The easiest way to get going is to start with one of
+the example flowcharts. If you click on one,
+it'll zoom in, and there will be a pencil
+button <i class="fas fa-pencil-alt"></i>
+you can click on to edit your own copy.
+
+
+
+You can copy existing objects with <kbd>Ctrl</kbd>+drag.
+
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-01-19T04:08:51.774Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15\&quot; etag=\&quot;kWPSsfe81E7fuXQfpemr\&quot; version=\&quot;20.8.5\&quot;&gt;&lt;diagram id=\&quot;p1AgiMrpuAm8F1ZPscJE\&quot; name=\&quot;Page-1\&quot;&gt;5VZRb5swEP41PLYykJDusUlLu03TOvEwrW8GDrBibGackOzXzzYG4kCnvk3TiAS+78539t3nc7xwV5+eBG6qLzwH6gUoP3nhgxcE/mYTqo9Gzhbx/XWPlILkFpuAhPwCCyKLHkgOrWMoOaeSNC6YccYgkw6GheCda1Zw6kZtcAkzIMkwnaPfSS6rHr0LNhP+DKSshsh+9KHXpDjbl4IfmI3nBWFsnl5d48GX3Whb4Zx3F1D46IU7wbnsR/VpB1Qnd0hbPy9+QzuuWwCT75mwLTdp3sDq8XW3Z/j4ECdpd2O9HDE92HwkEgtpVyzPQ5aUK1UQJWy7ikhIGpxpTadIobBK1lRJvhqahEBupYIzGeOaUM2Oe7knrOVMeX4+NyAolCTVAYxZwg/C+KykVKUP1uG9eqnd6Jc2aG9LzksKuCHtbcZro8haYxoXfRA1vAizDrZLgXoK+pGS5zkcEgJCwukCsjl9Al6DFCoSsto7W96zK3YTl/zIYtUFj1YWw5a+5eh4KqEa2CouV/Rb+kMUrGNFsnr4ePz0ef01OfzvFR1PGdJKQumOUy7MlsNirX920gWemkdPloLvYUnzBisWuPMmUcLAZcpIi79GlWBGFS+IqIq6TR2uRD8PukmZtN20JtmqksiPmpNJzaBXo1J/d1Lo2F6w1ReDwOXgVq0yHYxMnzd9cg96c6bFN+c5T1l+r9u8kjKK25ZkLj1z3FYjO/sCDn3cRw590VKFEYpjhP4BYut9vmApQTCzWZV/hVKcAt2ON9GwMcYZzHmOzDOyGfLZzfheLvsOk6NwRuT1Ao8HTADFkhzd2EvktuFfOFGrmmJHV+cIXZ2P1pTHzrq8EK8crdCVo7srR6pvliD/4Ggw5EXRgmNjzuOYt6UjqsTp7u/Np39Y4eNv&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+
+
+By hovering over a shape, you will see arrows heading away from it.
+To create a linking arrow between two shapes, hover over the first shape
+and drag one of these arrows onto the second.
+
+![picture of shape with arrows](https://www.diagrams.net/assets/img/blog/custom-properties-hover.png)
+
+
+
+To label a shape or an arrow, simply select it and start typing.
+You can move the text for an arrow by selecting the arrow
+and dragging the orange dot.

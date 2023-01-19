@@ -5,5 +5,5 @@ cascade:
 menu:
     main:
         weight: -999
-        pre: <i class='fa fa-laptop-file'></i>
+        pre: <i class='fa fa-thumbs-up'></i>
 ---
