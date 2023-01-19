@@ -1,1 +1,151 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Autonomous Vehicles</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/</link><description>Recent content in Autonomous Vehicles on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/vehicles/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 1: Follow the line</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/1-follow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/1-follow/</guid><description/></item><item><title>Assessment: 2: Obstacle course</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/2-obstacle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/2-obstacle/</guid><description/></item><item><title>Assessment: 3: Robotics explorer</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</guid><description/></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Autonomous Vehicles</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/</link><description>Recent content in Autonomous Vehicles on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/vehicles/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 1: Follow the line</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/1-follow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/1-follow/</guid><description>
+&lt;p>&lt;strong>In teams of two&lt;/strong>, design algorithms using flowcharts to create an automated, driverless vehicle that can:&lt;/p>
+&lt;ul>
+&lt;li>stop at a line,&lt;/li>
+&lt;li>follow a line, and&lt;/li>
+&lt;li>travel between two lines.&lt;/li>
+&lt;/ul>
+&lt;p>Explore how an automated vehicle might be guided along a road or track and how line detection could be used to save lives. Design ways to improve driving safety by helping to prevent drivers from falling asleep and causing an accident.&lt;/p>
+&lt;p>&lt;img src="https://pybricks.com/ev3-micropython/_images/robot_educator_line.jpg" alt="EV# vehicle following a line">&lt;/p>
+&lt;h2 id="task-description">Task Description&lt;/h2>
+&lt;p>You will need to complete all the following sections as part of your collaborative presentation:&lt;/p>
+&lt;ol>
+&lt;li>Drive and stop at a line
+&lt;ol>
+&lt;li>Design a flowchart for the automated vehicle to stop at a line.&lt;/li>
+&lt;li>Working code with comments&lt;/li>
+&lt;li>Validation video&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Following a line
+&lt;ol>
+&lt;li>Design a flowchart for the automated, driverless vehicle to follow a line.&lt;/li>
+&lt;li>Working code with comments&lt;/li>
+&lt;li>Validation video&lt;/li>
+&lt;li>Explain how an automated vehicle might be guided along a road or track.&lt;/li>
+&lt;li>Once the wheeled robot is following the line, can it be improved to behave more like a car (i.e., move in a straight line rather than a wiggle)?&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Detecting lane changes
+&lt;ol>
+&lt;li>To simulate what could happen if a driver falls asleep while driving, your robot could sound an alarm signal when it crosses the line. Program your robot to perform this function. Add you working code with comments.&lt;/li>
+&lt;li>What can happen if a driver falls asleep while driving?&lt;/li>
+&lt;li>How can we detect when a driver is falling asleep?&lt;/li>
+&lt;li>How could you improve your program?&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Extension&lt;br/>
+Simulate a vehicle’s behaviour at traffic lights by having their wheeled robot respond to a series of green and red signals. Placing the code inside a loop allows for the possibility of multiple “traffic lights” along a track. Use the technic beams available in the EV3 core set to simulate green and red lights. Place the beams on the table so the Color Sensor can detect them while rolling over them.&lt;/li>
+&lt;/ol>
+&lt;h2 id="to-be-successful">To Be Successful&lt;/h2>
+&lt;ul>
+&lt;li>Appropriate protocols when taking a photos/videos of others.&lt;/li>
+&lt;li>Acknowledge sources appropriately including graphics&lt;/li>
+&lt;li>Plan and implement consistent and logical navigation&lt;/li>
+&lt;li>Include hyperlinks to navigate the presentation&lt;/li>
+&lt;li>Reference sources appropriately&lt;/li>
+&lt;li>Complete at least all items of first 3 parts of this task.&lt;/li>
+&lt;/ul>
+&lt;h2 id="learning-behaviours">Learning Behaviours&lt;/h2>
+&lt;p>This task provides the following opportunities to develop and demonstrate the Learner Behaviours:&lt;/p>
+&lt;dl>
+&lt;dt>Driven&lt;/dt>
+&lt;dd>Engages in Python coding challenges with persistence and learns from their mistakes and willingly completes the extension activities.&lt;/dd>
+&lt;dt>Curious&lt;/dt>
+&lt;dd>Explores and tests ideas by asking questions, researching and through trial and error when learning new skills or developing solutions&lt;/dd>
+&lt;dt>Collaborative&lt;/dt>
+&lt;dd>Works in teams to solve problems and create new information. Willingly shares new skills and knowledge and assists others and seeks assistance from peers.&lt;/dd>
+&lt;dt>Connected&lt;/dt>
+&lt;dd>Connects programming constructs and data structures to real life applications and is able to explore and discuss issues and ethical implications of their solution&lt;/dd>
+&lt;dt>Flexible Thinker&lt;/dt>
+&lt;dd>Applies new knowledge and skills to solve problems and is able to adapt and recognize patterns in other solutions&lt;/dd>
+&lt;dt>Disciplined&lt;/dt>
+&lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project&lt;/dd>
+&lt;/dl></description></item><item><title>Assessment: 2: Obstacle course</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/2-obstacle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/2-obstacle/</guid><description>
+&lt;p>&lt;strong>In teams of two&lt;/strong>, you will design algorithms using flowcharts to create an automated, driverless vehicle that can navigate an obstacle course. You will then adapt your code to use a touch sensor and an ultrasonic sensor to complete the same course, and make comparisons between the solutions.&lt;/p>
+&lt;p>This challenge features a sequence of turns that the robot must perform in order to get to the &amp;ldquo;end&amp;rdquo; of the course. The robot must begin at the starting point and get to the goal area by completing turning and forward movement behaviours. The robot must &lt;em>not&lt;/em> cross any lines.&lt;/p>
+&lt;p>&lt;img src="https://pybricks.com/ev3-micropython/_images/robot_educator_ultrasonic.jpg" alt="EV3 vehicle with ultrasonic sensor">&lt;/p>
+&lt;h2 id="task-description">Task description&lt;/h2>
+&lt;p>You will need to complete all the following sections as part of your collaborative presentation:&lt;/p>
+&lt;h3 id="1-traverse-course">1. Traverse course&lt;/h3>
+&lt;p>Traverse the course without using any sensors.&lt;/p>
+&lt;ul>
+&lt;li>Design a flowchart for the automated, driverless vehicle to reach the goal.&lt;/li>
+&lt;li>Working code with comments.&lt;/li>
+&lt;li>Validation video.&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-wall-detection-with-touch-sensor">2. Wall detection with touch sensor&lt;/h3>
+&lt;p>Use a touch sensor to detect the boundaries (walls) of the course while moving.&lt;/p>
+&lt;ul>
+&lt;li>Design a flowchart for the automated, driverless vehicle to reach the goal using a touch sensor.&lt;/li>
+&lt;li>Working code with comments.&lt;/li>
+&lt;li>Validation video.&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-wall-detection-with-ultrasonic-sensor">3. Wall detection with ultrasonic sensor&lt;/h3>
+&lt;p>Use an ultrasonic sensor to detect the boundaries (walls) of the course while moving.&lt;/p>
+&lt;ul>
+&lt;li>Design a flowchart for the automated, driverless vehicle to reach the goal using an ultrasonic sensor.&lt;/li>
+&lt;li>Working code with comments.&lt;/li>
+&lt;li>Validation video.&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-connection-to-our-world">4. Connection to our world&lt;/h3>
+&lt;p>Discuss the following questions:&lt;/p>
+&lt;ol>
+&lt;li>What differences were there between the touch and ultrasonic sensors in relation to your code and the driverless vehicle? Explain.&lt;/li>
+&lt;li>How do modern vehicles use these two sensors?&lt;/li>
+&lt;/ol>
+&lt;h2 id="to-be-successful">To Be Successful&lt;/h2>
+&lt;ul>
+&lt;li>Use appropriate protocols when taking photos/videos of others.&lt;/li>
+&lt;li>Acknowledge sources appropriately including source of graphics.&lt;/li>
+&lt;li>Plan and implement consistent and logical navigation.&lt;/li>
+&lt;li>Include hyperlinks to navigate the presentation.&lt;/li>
+&lt;li>Reference sources appropriately.&lt;/li>
+&lt;li>Complete all 3 sections of this task &lt;em>including questions&lt;/em>.&lt;/li>
+&lt;li>Work collaboratively with your partner.&lt;/li>
+&lt;/ul>
+&lt;h2 id="learning-behaviours">Learning Behaviours&lt;/h2>
+&lt;p>This task provides the following opportunities to develop and demonstrate the Learner Behaviours:&lt;/p>
+&lt;dl>
+&lt;dt>Driven&lt;/dt>
+&lt;dd>Engages in Python coding challenges with persistence and learns from their mistakes and willingly completes the extension activities.&lt;/dd>
+&lt;dt>Curious&lt;/dt>
+&lt;dd>Explores and tests ideas by asking questions, researching and through trial and error when learning new skills or developing solutions&lt;/dd>
+&lt;dt>Collaborative&lt;/dt>
+&lt;dd>Works in teams to solve problems and create new information. Willingly shares new skills and knowledge and assists others and seeks assistance from peers.&lt;/dd>
+&lt;dt>Connected&lt;/dt>
+&lt;dd>Connects programming constructs and data structures to real life applications and is able to explore and discuss issues and ethical implications of their solution&lt;/dd>
+&lt;dt>Flexible Thinker&lt;/dt>
+&lt;dd>Applies new knowledge and skills to solve problems and is able to adapt and recognize patterns in other solutions&lt;/dd>
+&lt;dt>Disciplined&lt;/dt>
+&lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project&lt;/dd>
+&lt;/dl></description></item><item><title>Assessment: 3: Robotics explorer</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</guid><description>
+&lt;p>&lt;strong>In teams of two&lt;/strong>, your task is to design and program an autonomous robot that can explore and navigate its way around a room by avoiding walls and other obstacles before running into them. Your robot must have the capacity to carry a small camera or mobile phone.&lt;/p>
+&lt;h2 id="to-be-successful">To Be Successful&lt;/h2>
+&lt;p>Your team must complete a working robot and documentation that includes:&lt;/p>
+&lt;ul>
+&lt;li>Defining&lt;/li>
+&lt;li>Collaborating and managing&lt;/li>
+&lt;li>Designing&lt;/li>
+&lt;li>Implementing&lt;/li>
+&lt;li>Evaluating&lt;/li>
+&lt;/ul>
+&lt;p>Include comments with your all Python code. Use appropriate programming structures (selection and iteration). In detail, you must each complete the documentation in your OneNote.&lt;/p>
+&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>Students apply their coding skills and iterative project techniques to collaboratively identify, deconstruct, design and create an autonomous robot that uses sensors to explore a room.&lt;/p>
+&lt;h2 id="learning-behaviours">Learning Behaviours&lt;/h2>
+&lt;p>This task provides the following opportunities to develop and demonstrate the Learner Behaviours:&lt;/p>
+&lt;dl>
+&lt;dt>Driven&lt;/dt>
+&lt;dd>Engages in Python coding challenges with persistence and learns from their mistakes and willingly completes the extension activities.&lt;/dd>
+&lt;dt>Curious&lt;/dt>
+&lt;dd>Explores and tests ideas by asking questions, researching and through trial and error when learning new skills or developing solutions&lt;/dd>
+&lt;dt>Collaborative&lt;/dt>
+&lt;dd>Works in teams to solve problems and create new information. Willingly shares new skills and knowledge and assists others and seeks assistance from peers.&lt;/dd>
+&lt;dt>Connected&lt;/dt>
+&lt;dd>Connects programming constructs and data structures to real life applications and is able to explore and discuss issues and ethical implications of their solution&lt;/dd>
+&lt;dt>Flexible Thinker&lt;/dt>
+&lt;dd>Applies new knowledge and skills to solve problems and is able to adapt and recognize patterns in other solutions&lt;/dd>
+&lt;dt>Disciplined&lt;/dt>
+&lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project&lt;/dd>
+&lt;/dl></description></item></channel></rss>

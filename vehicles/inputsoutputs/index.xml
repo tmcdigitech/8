@@ -1,0 +1,206 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Inputs and Outputs</title><link>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/</link><description>Recent content in Inputs and Outputs on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/vehicles/inputsoutputs/index.xml" rel="self" type="application/rss+xml"/><item><title>Vehicles: DriveBase</title><link>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/drive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/drive/</guid><description>
+&lt;p>&lt;em>adapted from &lt;a href="https://pybricks.com/ev3-micropython/robotics.html">PyBricks&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Having to control the two motors independently to move our vehicle would involve figuring out a lot of maths ourselves,
+which would be annoying, time-consuming and error-prone.&lt;/p>
+&lt;p>Instead, we can use the &lt;code>DriveBase&lt;/code> class to make driving our robot around a lot simpler.&lt;/p>
+&lt;figure>
+&lt;img src="https://pybricks.com/ev3-micropython/_images/ev3motors_label.png"/> &lt;figcaption>
+&lt;h4>EV3-compatible motors. Arrows indicate the default positive direction.&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="import">Import&lt;/h2>
+&lt;p>We also need to import the code for the Motor.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">from&lt;/span> pybricks.ev3devices &lt;span style="color:#ff79c6">import&lt;/span> Motor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">from&lt;/span> pybricks.robotics &lt;span style="color:#ff79c6">import&lt;/span> DriveBase
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="setup">Setup&lt;/h2>
+&lt;p>We also need to initialize the motors:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Initialize the motors.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>left_motor &lt;span style="color:#ff79c6">=&lt;/span> Motor(Port&lt;span style="color:#ff79c6">.&lt;/span>B)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>right_motor &lt;span style="color:#ff79c6">=&lt;/span> Motor(Port&lt;span style="color:#ff79c6">.&lt;/span>C)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Initialize the drive base.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot &lt;span style="color:#ff79c6">=&lt;/span> DriveBase(left_motor, right_motor, wheel_diameter&lt;span style="color:#ff79c6">=&lt;/span>&lt;span style="color:#bd93f9">55.5&lt;/span>, axle_track&lt;span style="color:#ff79c6">=&lt;/span>&lt;span style="color:#bd93f9">104&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>By specifying the dimensions of your robot, this class makes it easy to drive a given distance in millimeters or turn by a given number of degrees.&lt;/p>
+&lt;p>&lt;strong>Positive&lt;/strong> distances, radii, or drive speeds mean driving &lt;strong>forward&lt;/strong>. &lt;strong>Negative&lt;/strong> means &lt;strong>backward&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Positive&lt;/strong> angles and turn rates mean turning &lt;strong>right&lt;/strong>. &lt;strong>Negative&lt;/strong> means &lt;strong>left&lt;/strong>. So when viewed from the top, positive means clockwise and negative means counterclockwise.&lt;/p>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>left_motor&lt;/code>, the motor that drives the left wheel.&lt;/li>
+&lt;li>&lt;code>right_motor&lt;/code>, the motor that drives the right wheel.&lt;/li>
+&lt;li>&lt;code>wheel_diameter&lt;/code>, diameter of the wheels in &lt;em>millimetres&lt;/em> (mm).&lt;/li>
+&lt;li>&lt;code>axle_track&lt;/code>, distance between the points where the left and right wheels touch the ground, in &lt;em>millimetres&lt;/em> (mm).&lt;/li>
+&lt;/ul>
+&lt;h2 id="functions">Functions&lt;/h2>
+&lt;h3 id="driving-in-the-foreground">Driving in the foreground&lt;/h3>
+&lt;p>The following functions operate in the foreground, meaning
+that the robot will drive a given distance, or turn by a
+given angle, then stop, and then move on to the next
+instruction. The distance/angle travelled is measured using
+the rotation sensors in the motor units. Because wheels may
+slip while moving, the travelled distance and angle are only
+estimates.&lt;/p>
+&lt;h3 id="straightdistance">&lt;code>straight(distance)&lt;/code>&lt;/h3>
+&lt;p>Drives straight for a given distance and then stops.&lt;/p>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>distance&lt;/code>, distance to travel in &lt;em>millimetres&lt;/em> (mm).&lt;/li>
+&lt;/ul>
+&lt;h3 id="turnangle">&lt;code>turn(angle)&lt;/code>&lt;/h3>
+&lt;p>Turns in place by a given angle and then stops.&lt;/p>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>angle&lt;/code>, angle to turn in &lt;em>degrees&lt;/em> (°).&lt;/li>
+&lt;/ul>
+&lt;h3 id="curveradius-angle">&lt;code>curve(radius, angle)&lt;/code>&lt;/h3>
+&lt;p>Drives an arc along a circle of a given radius, by a given angle.&lt;/p>
+&lt;p>Parameters:
+radius (dimension: mm) – Radius of the circle.
+angle (angle: deg) – Angle along the circle.&lt;/p>
+&lt;h3 id="driving-in-the-background">Driving in the background&lt;/h3>
+&lt;p>If you want the robot to do things while it is driving (for
+example, check on the values of sensors), you need to use the
+&lt;code>drive()&lt;/code> function. Unlike the ones above, this will start the
+wheels turning, and then &lt;em>immediately&lt;/em> move on to the next
+instruction, while the wheels remain turning. They will keep
+travelling in the same way unless another movement instruction
+or a &lt;code>stop()&lt;/code> instruction is given.&lt;/p>
+&lt;h3 id="drivedrive_speed-turn_rate">&lt;code>drive(drive_speed, turn_rate)&lt;/code>&lt;/h3>
+&lt;p>Starts driving at the specified speed and turn rate. Both values are measured at the center point between the wheels of the robot. It keeps going until you use stop() or change course by using drive() again. For example, you can drive until a sensor is triggered and then stop or turn around.&lt;/p>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>drive_speed&lt;/code>, speed of the robot in millimetres per second (mm/s).&lt;/li>
+&lt;li>&lt;code>turn_rate&lt;/code>, turn rate of the robot in degrees per second (°/s).&lt;/li>
+&lt;/ul>
+&lt;h3 id="stop">&lt;code>stop()&lt;/code>&lt;/h3>
+&lt;p>Stops the robot by letting the motors spin freely.&lt;/p>
+&lt;h2 id="example">Example&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Go forward and backwards for one metre.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>straight(&lt;span style="color:#bd93f9">1000&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>straight(&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">1000&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Turn clockwise by 360 degrees and back again. &lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>turn(&lt;span style="color:#bd93f9">360&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>turn(&lt;span style="color:#ff79c6">-&lt;/span>&lt;span style="color:#bd93f9">360&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Vehicles: Touch sensor</title><link>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/touch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/touch/</guid><description>
+&lt;p>&lt;em>adapted from &lt;a href="https://pybricks.com/ev3-micropython/ev3devices.html#touch-sensor">PyBricks&lt;/a>&lt;/em>&lt;/p>
+&lt;p>A sensor lets an EV3 program measure and collect data about its surroundings. The Touch Sensor detects when its red button
+has been pressed or released.&lt;/p>
+&lt;figure>
+&lt;img src="https://pybricks.com/ev3-micropython/_images/sensor_ev3_touch.png"/> &lt;figcaption>
+&lt;h4>An EV3 touch sensor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="import">Import&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">from&lt;/span> pybricks.ev3devices &lt;span style="color:#ff79c6">import&lt;/span> TouchSensor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="setup">Setup&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Initialize Touch Sensor&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>touch_sensor &lt;span style="color:#ff79c6">=&lt;/span> TouchSensor(Port&lt;span style="color:#ff79c6">.&lt;/span>S1)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="functions">Functions&lt;/h2>
+&lt;h3 id="pressed">&lt;code>pressed()&lt;/code>&lt;/h3>
+&lt;p>Checks if the sensor is pressed.&lt;/p>
+&lt;p>Returns:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>True&lt;/code> if the sensor is pressed, &lt;code>False&lt;/code> if it is not pressed.&lt;/li>
+&lt;/ul>
+&lt;h2 id="example">Example&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Beep when touch sensor is pressed&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">while&lt;/span> &lt;span style="color:#ff79c6">True&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">if&lt;/span> button&lt;span style="color:#ff79c6">.&lt;/span>pressed():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ev3&lt;span style="color:#ff79c6">.&lt;/span>speaker&lt;span style="color:#ff79c6">.&lt;/span>beep()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Drive forward until touch sensor is pressed&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>drive(&lt;span style="color:#bd93f9">1000&lt;/span>, &lt;span style="color:#bd93f9">0&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">while&lt;/span> &lt;span style="color:#ff79c6">not&lt;/span> touch_sensor&lt;span style="color:#ff79c6">.&lt;/span>pressed():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>stop()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Vehicles: Ultrasonic sensor</title><link>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/ultrasonic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/ultrasonic/</guid><description>
+&lt;p>&lt;em>adapted from &lt;a href="https://pybricks.com/ev3-micropython/ev3devices.html#ultrasonic-sensor">PyBricks&lt;/a>&lt;/em>&lt;/p>
+&lt;p>The Ultrasonic Sensor is a digital sensor that can measure the distance to an object in front of it. It does this by sending out high frequency sound waves and measuring how long it takes the sound to reflect back to the sensor. The sound frequency is too high for you to hear.&lt;/p>
+&lt;p>Distance to an object is measured in millimeters (mm). This allows you to program your robot to stop at a certain distance from a wall.&lt;/p>
+&lt;figure>
+&lt;img src="https://pybricks.com/ev3-micropython/_images/sensor_ev3_ultrasonic.png"/> &lt;figcaption>
+&lt;h4>An EV3 ultrasonic sensor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="import">Import&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">from&lt;/span> pybricks.ev3devices &lt;span style="color:#ff79c6">import&lt;/span> UltrasonicSensor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="setup">Setup&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Initialize the Ultrasonic Sensor.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>obstacle_sensor &lt;span style="color:#ff79c6">=&lt;/span> UltrasonicSensor(Port&lt;span style="color:#ff79c6">.&lt;/span>S4)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="functions">Functions&lt;/h2>
+&lt;h3 id="distancebrdistancesilent">&lt;code>distance()&lt;/code>&lt;br/>&lt;code>distance(silent)&lt;/code>&lt;/h3>
+&lt;p>Measures the distance between the sensor and an object using ultrasonic sound waves.&lt;/p>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>silent (bool): &lt;code>False&lt;/code> by default. Choose &lt;code>True&lt;/code> to turn the sensor off after measuring the distance. This reduces interference with other ultrasonic sensors. If you do this too frequently, the sensor can freeze. If this happens, unplug it and plug it back in.&lt;/li>
+&lt;/ul>
+&lt;p>Returns:&lt;/p>
+&lt;ul>
+&lt;li>distance in mm&lt;/li>
+&lt;/ul>
+&lt;h3 id="presence">&lt;code>presence()&lt;/code>&lt;/h3>
+&lt;p>Checks for the presence of other ultrasonic sensors by detecting ultrasonic sounds.&lt;/p>
+&lt;p>If the other ultrasonic sensor is operating in silent mode, you can only detect the presence of that sensor while it is taking a measurement.&lt;/p>
+&lt;p>Returns:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>True&lt;/code> if ultrasonic sounds are detected, &lt;code>False&lt;/code> if not.&lt;/li>
+&lt;/ul>
+&lt;h2 id="example">Example&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Drive forward until an object is no more than 30cm away&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>drive(&lt;span style="color:#bd93f9">200&lt;/span>, &lt;span style="color:#bd93f9">0&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">while&lt;/span> obstacle_sensor&lt;span style="color:#ff79c6">.&lt;/span>distance() &lt;span style="color:#ff79c6">&amp;gt;&lt;/span> &lt;span style="color:#bd93f9">300&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff79c6">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>stop()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Vehicles: Color sensor</title><link>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/color/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/vehicles/inputsoutputs/color/</guid><description>
+&lt;p>&lt;em>adapted from &lt;a href="https://pybricks.com/ev3-micropython/ev3devices.html#color-sensor">PyBricks&lt;/a>&lt;/em>&lt;/p>
+&lt;p>A sensor lets an EV3 program measure and collect data about is surroundings. The Color Sensor can detect color and reflected light.&lt;/p>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h3 id="color-vs-colour">Color vs colour&lt;/h3>
+&lt;p>In almost all programming, American spellings are used. So as programmers we use &lt;strong>color&lt;/strong> and &lt;strong>colors&lt;/strong>, even though we would normally spell the words &lt;em>colour&lt;/em> and &lt;em>colours&lt;/em>.
+&lt;/div>
+&lt;figure>
+&lt;img src="https://pybricks.com/ev3-micropython/_images/sensor_ev3_color.png"/> &lt;figcaption>
+&lt;h4>An EV3 color sensor&lt;/h4>
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="import">Import&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">from&lt;/span> pybricks.ev3devices &lt;span style="color:#ff79c6">import&lt;/span> ColorSensor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="setup">Setup&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Initialize the sensors.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>line_sensor &lt;span style="color:#ff79c6">=&lt;/span> ColorSensor(Port&lt;span style="color:#ff79c6">.&lt;/span>S1)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="functions">Functions&lt;/h2>
+&lt;h3 id="reflection">&lt;code>reflection()&lt;/code>&lt;/h3>
+&lt;p>Measures the reflection of a surface using a red light.&lt;/p>
+&lt;p>Returns:&lt;/p>
+&lt;ul>
+&lt;li>reflection, ranging from 0 (no reflection) to 100 (high reflection).&lt;/li>
+&lt;/ul>
+&lt;h3 id="rgb">&lt;code>rgb()&lt;/code>&lt;/h3>
+&lt;p>Measures the reflection of a surface using a red, green, and then a blue light.&lt;/p>
+&lt;p>Returns:&lt;/p>
+&lt;ul>
+&lt;li>tuple of reflections for red, green, and blue light, each ranging from 0.0 (no reflection) to 100.0 (high reflection).&lt;br/>
+(r, g, b)&lt;/li>
+&lt;/ul>
+&lt;h3 id="color">&lt;code>color()&lt;/code>&lt;/h3>
+&lt;p>Measures the color of a surface.&lt;/p>
+&lt;p>Returns:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Color.BLACK&lt;/code>, &lt;code>Color.BLUE&lt;/code>, &lt;code>Color.GREEN&lt;/code>, &lt;code>Color.YELLOW&lt;/code>, &lt;code>Color.RED&lt;/code>, &lt;code>Color.WHITE&lt;/code>, &lt;code>Color.BROWN&lt;/code>, or &lt;code>None&lt;/code> if no color is detected.&lt;/li>
+&lt;/ul>
+&lt;h3 id="ambient">&lt;code>ambient()&lt;/code>&lt;/h3>
+&lt;p>Measures the ambient light intensity.&lt;/p>
+&lt;p>Returns:&lt;/p>
+&lt;ul>
+&lt;li>ambient light intensity, ranging from 0 (dark) to 100 (bright).&lt;/li>
+&lt;/ul>
+&lt;h2 id="example">Example&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#6272a4"># Go forward while reflected light is less than 10.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ev3&lt;span style="color:#ff79c6">.&lt;/span>speaker&lt;span style="color:#ff79c6">.&lt;/span>beep()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>drive(&lt;span style="color:#bd93f9">100&lt;/span>,&lt;span style="color:#bd93f9">0&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff79c6">while&lt;/span> line_sensor&lt;span style="color:#ff79c6">.&lt;/span>reflection() &lt;span style="color:#ff79c6">&amp;lt;&lt;/span> &lt;span style="color:#bd93f9">10&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> wait(&lt;span style="color:#bd93f9">10&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>robot&lt;span style="color:#ff79c6">.&lt;/span>stop()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!-- Three modes: **Color**, **Reflected Light** intensity and **Ambient Light** intensity.
+– **Color Mode**: Recognizes 7 colors (black, brown, blue, green, yellow, red, white) and No Color
+– **Reflected Light**: Measures the intensity of the light reflected back from a lamp that emits a red light. (0=very dark and 100=very light)
+– **Ambient Light**: Measures the strength of the light that enters the sensor from the environment. (0=very dark and 100=very light) --></description></item></channel></rss>
