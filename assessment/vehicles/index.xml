@@ -120,7 +120,136 @@ Simulate a vehicle’s behaviour at traffic lights by having their wheeled robot
 &lt;dt>Disciplined&lt;/dt>
 &lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project&lt;/dd>
 &lt;/dl></description></item><item><title>Assessment: 3: Robotics explorer</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</guid><description>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Project brief&lt;/h4>
+As a mining company, we are seeking a solution for carrying out tasks in hazardous areas of our mines without risking the safety of our workers. We are interested in an autonomous robot that can navigate through confined spaces and avoid obstacles, such as rocks or machinery. It should also have the ability to carry a small camera or mobile phone. Could your team design and program such a robot for us?
+&lt;/div>
+&lt;hr>
 &lt;p>&lt;strong>In teams of two&lt;/strong>, your task is to design and program an autonomous robot that can explore and navigate its way around a room by avoiding walls and other obstacles before running into them. Your robot must have the capacity to carry a small camera or mobile phone.&lt;/p>
+&lt;h2 id="defining">Defining&lt;/h2>
+&lt;p>All projects need an introduction that tells the reader what the intended aim of the developed project will be. The problem definition explains the problem/situation and outlines the intended outcomes of the system.&lt;/p>
+&lt;ul>
+&lt;li>Explain the task by describing the scenario or setting in which the problem exists. Use the following template to describe the problem to be solved. As a &lt;em>type of user&lt;/em>, I want &lt;em>some goal&lt;/em> so that &lt;em>some reason&lt;/em>. For example:
+&lt;blockquote>
+&lt;p>&amp;ldquo;As a user with a visual impairment I want to be able to get the news on my smartphone so that I can keep up with my world.&amp;rdquo;&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>List the design criteria required by the user &lt;small>&lt;i>(AC9TDI8P04)&lt;/i>&lt;/small>&lt;/li>
+&lt;/ul>
+&lt;h3 id="decomposing">Decomposing&lt;/h3>
+&lt;p>How can this problem be broken down into smaller parts so it can be solved? &lt;small>&lt;i>(AC9TDI8P04)&lt;/i>&lt;/small>
+Make a list/diagram of the smaller parts that will together solve the problem.
+&lt;img src="mindmap.png" alt="mindmap">&lt;/p>
+&lt;h2 id="collaborating-and-managing">Collaborating and managing&lt;/h2>
+&lt;p>Project planning is stating how to complete a project within a certain timeframe, usually with defined stages, and with designated resources.&lt;/p>
+&lt;ul>
+&lt;li>Using the example table below to &lt;em>plan&lt;/em> and &lt;em>manage&lt;/em> the collaborative project. &lt;small>&lt;i>(AC9TDI8P12)&lt;/i>&lt;/small>&lt;/li>
+&lt;li>Use the feedback notes to record:
+&lt;ul>
+&lt;li>Problems your team encountered and how your team solved the problems.&lt;/li>
+&lt;li>Steps your team took to produce your final robot (use photos or video).&lt;/li>
+&lt;li>What aspects of your design and program you tested.&lt;/li>
+&lt;li>What adjustments did you make to improve the robot build and program to complete the project&lt;/li>
+&lt;li>What did you learn?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="project-planning">Project planning&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Project Tasks/Stage&lt;/th>
+&lt;th>Responsibilities&lt;/th>
+&lt;th>Timeframes/Schedule Completion Date&lt;/th>
+&lt;th>Tested completed&lt;/th>
+&lt;th>Feedback Notes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;td>.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="projectPlan.png" alt="project plan">&lt;/p>
+&lt;h3 id="project-collaboration-protocols">Project Collaboration Protocols&lt;/h3>
+&lt;p>Discuss how the project content will be shared and what collaboration protocols/rules your team has agreed to.&lt;/p>
+&lt;ul>
+&lt;li>What digital tools will your team use to collaborate and why?&lt;/li>
+&lt;li>What procedures will be followed to ensure work can continue in the event of a lost laptop or absent team member?
+-How will you ensure your team’s work is presented consistently?&lt;/li>
+&lt;/ul>
+&lt;h2 id="designing">Designing&lt;/h2>
+&lt;p>Before your team creates and develops a robot to achieve the goal(s) described above you need to discuss and document a SPA.&lt;/p>
+&lt;h3 id="sense--plan--act">Sense — Plan — Act&lt;/h3>
+&lt;dl>
+&lt;dt>SENSE&lt;/dt>
+&lt;dd>The robot needs the ability to sense important things about its environment, like the presence of obstacles or navigation aids. What data does your robot need about its surroundings, and how will it gather that data? How Will you validate the data collected? &lt;small>&lt;i>(AC9TDI8P01)&lt;/i>&lt;/small>&lt;/dd>
+&lt;dt>PLAN&lt;/dt>
+&lt;dd>The robot needs to take the sensed data and figure out how to respond appropriately to it, based on a pre-existing strategy. What is the robot&amp;rsquo;s strategy? How does your program determine the appropriate response, based on that strategy and the sensed data? Draw a flowchart of your plan. &lt;small>&lt;i>(AC9TDI8P05)&lt;/i>&lt;/small>&lt;/dd>
+&lt;dt>ACT&lt;/dt>
+&lt;dd>Finally, the robot must actually act to carry out the actions that the plan calls for. Will the robot design your team is planning to build allow it to sense and act out your plan, physically? What will the robot do? How will it act?&lt;/dd>
+&lt;/dl>
+&lt;h2 id="implementing">Implementing&lt;/h2>
+&lt;h3 id="coding-modifying-debugging-and-testing">Coding, modifying, debugging and testing&lt;/h3>
+&lt;p>During the development and testing of your robot each team member is required to maintain the shared Project Plan.
+Collaboratively implement your solution to the problem by writing, modifying, debugging and testing your code as a team. (AC9TDI8P09)
+Your code must include:&lt;/p>
+&lt;ul>
+&lt;li>Comments to explain sections of code.&lt;/li>
+&lt;li>White space so it can be easily read.&lt;/li>
+&lt;li>Control structures – Sequence, selection/branching and Iteration/loops&lt;/li>
+&lt;/ul>
+&lt;h3 id="final-program">Final Program&lt;/h3>
+&lt;p>A print screen or print out of your final program is required with a detailed summary of how the program works. Make sure you have labelled the different sections of your program and have used internal comments. (AC9TDI8P09)&lt;/p>
+&lt;h3 id="validation-video">Validation Video&lt;/h3>
+&lt;p>Video your team’s robot solving the problem.&lt;/p>
+&lt;h2 id="evaluating">Evaluating&lt;/h2>
+&lt;h3 id="evaluation-ac9tdi8p10">Evaluation (AC9TDI8P10)&lt;/h3>
+&lt;p>In detail, describe the overall success or your robot. These questions will help you:&lt;/p>
+&lt;ul>
+&lt;li>Can your robot successfully achieve its primary goal?&lt;/li>
+&lt;li>Has your solution satisfied all the design criteria? Explain.&lt;/li>
+&lt;li>What does it do well?&lt;/li>
+&lt;li>What can be improved?&lt;/li>
+&lt;li>Is it efficient? Discuss the effectiveness of the code.&lt;/li>
+&lt;li>What other areas of society could you robot be used or opportunities for innovation and further development?&lt;/li>
+&lt;li>What future impact could your robot have?&lt;/li>
+&lt;li>Are there any potential risks associated with your robot and what can be done to reduce them?&lt;/li>
+&lt;li>Reflect on your project plan justifying choices made, identifying future improvements to plan and group team and task roles.&lt;/li>
+&lt;/ul>
+&lt;dl>
+&lt;dt>Presentation Checklist&lt;/dt>
+&lt;dt>Title slides&lt;/dt>
+&lt;dd>Team Members ⬜&lt;/dd>
+&lt;dt>Defining&lt;/dt>
+&lt;dd>Describe the problem. ⬜&lt;/dd>
+&lt;dd>List Design criteria. ⬜&lt;/dd>
+&lt;dd>Decompose the problem. ⬜&lt;/dd>
+&lt;dt>Collaborating and managing&lt;/dt>
+&lt;dd>Plan and Manage evidence with feedback notes. ⬜&lt;/dd>
+&lt;dd>Project Collaboration Protocols with software used. ⬜&lt;/dd>
+&lt;dt>Designing&lt;/dt>
+&lt;dd>Sensors used and how will it act? ⬜&lt;/dd>
+&lt;dd>Flow Chart ⬜&lt;/dd>
+&lt;dt>Implementing&lt;/dt>
+&lt;dd>Final Program/Code with comments ⬜&lt;/dd>
+&lt;dd>Validation Video ⬜&lt;/dd>
+&lt;dt>Evaluation&lt;/dt>
+&lt;dd>Detailed evaluation (answer questions) ⬜&lt;/dd>
+&lt;/dl>
+&lt;hr>
 &lt;h2 id="to-be-successful">To Be Successful&lt;/h2>
 &lt;p>Your team must complete a working robot and documentation that includes:&lt;/p>
 &lt;ul>
