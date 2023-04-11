@@ -87,27 +87,27 @@ In detail, describe the overall success or your robot. These questions will help
 
 Presentation Checklist
 Title slides
-: Team Members ⬜
+: ⬜ Team Members
 
 Defining
-: Describe the problem. ⬜
-: List Design criteria. ⬜
-: Decompose the problem.  ⬜
+: ⬜ Describe the problem.
+: ⬜ List Design criteria.
+: ⬜ Decompose the problem. 
 
 Collaborating and managing
-: Plan and Manage evidence with feedback notes. ⬜
-: Project Collaboration Protocols with software used. ⬜
+: ⬜ Plan and Manage evidence with feedback notes.
+: ⬜ Project Collaboration Protocols with software used.
 
 Designing
-: Sensors used and how will it act? ⬜
-: Flow Chart ⬜
+: ⬜ Sensors used and how will it act?
+: ⬜ Flow Chart
 
 Implementing
-: Final Program/Code with comments ⬜
-: Validation Video ⬜
+: ⬜ Final Program/Code with comments
+: ⬜ Validation Video
 
 Evaluation 
-: Detailed evaluation (answer questions) ⬜
+: ⬜ Detailed evaluation (answer questions)
 
 ---
 
