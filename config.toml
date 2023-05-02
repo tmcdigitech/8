@@ -201,6 +201,15 @@ enable = false
 [params.katex]
 enable = true
 
+[params.katex.mhchem]
+enable = true
+
+[params.mermaid]
+enable = true
+
+[params.markmap]
+enable = true
+
 # hugo module configuration
 
 [module]
