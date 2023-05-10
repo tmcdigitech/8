@@ -71,3 +71,25 @@ so we can write the code once and reuse it multiple times.
     <source src="codeWithFunction.mp4" type="video/mp4">
     Your browser does not support the video tag. Watch video <a href="codeWithFunction.mp4">here</a>.
 </video>
+
+By defining a function to do this work, we can add features or make changes to the function and see those reflected in every question—making those changes for every question by hand would be much more effort, and errors would be much more likely to creep in.
+
+## 6. Keeping score
+
+To keep track of the score, we will need a variable. For the moment we'll give one point for a correct answer.
+
+Since the score will exist across all questions, we need to declare the variable in the main body of the code, and tell the `ask()` function to use that variable, rather than make up its own when refer to it.
+
+<video controls>
+    <source src="codeAddScore.mp4" type="video/mp4">
+    Your browser does not support the video tag. Watch video <a href="codeAddScore.mp4">here</a>.
+</video>
+
+Here we add a point to the score when we get a question right and print out the current score. Notice the use of [f-strings](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python) here to print out a variable within other text.
+
+## Challenges
+
+1. Give more points for a correct answer
+2. Take away a point for each wrong answer
+3. Limit the number of guesses for each question
+    <br/>*Help: you will need a variable to store the number of guesses remaining. You will need to add another* `if` *statement to check the guesses remaining, as it is another way to leave the questions loop (i.e. you might get the answer right, or you might run out of guesses).*
