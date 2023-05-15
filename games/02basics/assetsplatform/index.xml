@@ -1,0 +1,243 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Sample Assets (Side)</title><link>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/</link><description>Recent content in Sample Assets (Side) on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/games/02basics/assetsplatform/index.xml" rel="self" type="application/rss+xml"/><item><title>Games: Backgrounds</title><link>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/backgrounds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/backgrounds/</guid><description>
+&lt;p>&lt;img src="blue_desert.png" alt="">
+&lt;img src="blue_grass.png" alt="">
+&lt;img src="blue_land.png" alt="">
+&lt;img src="blue_shroom.png" alt="">
+&lt;img src="colored_desert.png" alt="">
+&lt;img src="colored_grass.png" alt="">
+&lt;img src="colored_land.png" alt="">
+&lt;img src="colored_shroom.png" alt="">&lt;/p></description></item><item><title>Games: Enemies</title><link>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/enemies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/enemies/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Default&lt;/th>
+&lt;th>Move&lt;/th>
+&lt;th>Other&lt;/th>
+&lt;th>Dead&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="barnacle.png" alt="">&lt;/td>
+&lt;td>&lt;img src="barnacle_attack.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="barnacle_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="bee.png" alt="">&lt;/td>
+&lt;td>&lt;img src="bee_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="bee_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="fishblue.png" alt="">&lt;/td>
+&lt;td>&lt;img src="fishblue_fall.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="fishblue_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="fishgreen.png" alt="">&lt;/td>
+&lt;td>&lt;img src="fishgreen_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="fishgreen_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="fishpink.png" alt="">&lt;/td>
+&lt;td>&lt;img src="fishpink_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="fishpink_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="fly.png" alt="">&lt;/td>
+&lt;td>&lt;img src="fly_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="fly_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="frog.png" alt="">&lt;/td>
+&lt;td>&lt;img src="frog_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="frog_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="ladybug.png" alt="">&lt;/td>
+&lt;td>&lt;img src="ladybug_move.png" alt="">&lt;/td>
+&lt;td>&lt;img src="ladybug_fly.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="mouse.png" alt="">&lt;/td>
+&lt;td>&lt;img src="mouse_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="mouse_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="saw.png" alt="">&lt;/td>
+&lt;td>&lt;img src="saw_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="saw_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="sawhalf.png" alt="">&lt;/td>
+&lt;td>&lt;img src="sawhalf_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="sawhalf_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="slimeblock.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimeblock_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="slimeblock_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="slimeblue.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimeblue_move.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimeblue_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimeblue_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="slimegreen.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimegreen_move.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimegreen_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimegreen_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="slimepurple.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimepurple_move.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimepurple_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="slimepurple_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="snail.png" alt="">&lt;/td>
+&lt;td>&lt;img src="snail_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="snail_shell.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="wormgreen.png" alt="">&lt;/td>
+&lt;td>&lt;img src="wormgreen_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="wormgreen_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="wormpink.png" alt="">&lt;/td>
+&lt;td>&lt;img src="wormpink_move.png" alt="">&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;img src="wormpink_dead.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Games: Items</title><link>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/items/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/items/</guid><description>
+&lt;p>&lt;img src="coingold.png" alt="">
+&lt;img src="coinsilver.png" alt="">
+&lt;img src="coinbronze.png" alt="">&lt;/p>
+&lt;p>&lt;img src="flagblue1.png" alt="">
+&lt;img src="flagblue2.png" alt="">
+&lt;img src="flagblue_down.png" alt="">&lt;/p>
+&lt;p>&lt;img src="flaggreen1.png" alt="">
+&lt;img src="flaggreen2.png" alt="">
+&lt;img src="flaggreen_down.png" alt="">&lt;/p>
+&lt;p>&lt;img src="flagred1.png" alt="">
+&lt;img src="flagred2.png" alt="">
+&lt;img src="flagred_down.png" alt="">&lt;/p>
+&lt;p>&lt;img src="flagyellow1.png" alt="">
+&lt;img src="flagyellow2.png" alt="">
+&lt;img src="flagyellow_down.png" alt="">&lt;/p>
+&lt;p>&lt;img src="gemBlue.png" alt="">
+&lt;img src="gemGreen.png" alt="">
+&lt;img src="gemRed.png" alt="">
+&lt;img src="gemYellow.png" alt="">&lt;/p>
+&lt;p>&lt;img src="keyblue.png" alt="">
+&lt;img src="keygreen.png" alt="">
+&lt;img src="keyred.png" alt="">
+&lt;img src="keyyellow.png" alt="">&lt;/p>
+&lt;p>&lt;img src="star.png" alt="">&lt;/p></description></item><item><title>Games: Players</title><link>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/players/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/players/</guid><description>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Stand&lt;/th>
+&lt;th>Front&lt;/th>
+&lt;th>Walk1&lt;/th>
+&lt;th>Walk2&lt;/th>
+&lt;th>Swim1&lt;/th>
+&lt;th>Swim2&lt;/th>
+&lt;th>Climb1&lt;/th>
+&lt;th>Climb2&lt;/th>
+&lt;th>Hit&lt;/th>
+&lt;th>Duck&lt;/th>
+&lt;th>Jump&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="beige/alienbeige_stand.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_front.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_walk1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_walk2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_swim1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_swim2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_climb1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_climb2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_duck.png" alt="">&lt;/td>
+&lt;td>&lt;img src="beige/alienbeige_jump.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="blue/alienblue_stand.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_front.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_walk1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_walk2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_swim1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_swim2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_climb1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_climb2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_duck.png" alt="">&lt;/td>
+&lt;td>&lt;img src="blue/alienblue_jump.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="green/aliengreen_stand.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_front.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_walk1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_walk2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_swim1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_swim2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_climb1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_climb2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_duck.png" alt="">&lt;/td>
+&lt;td>&lt;img src="green/aliengreen_jump.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="pink/alienpink_stand.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_front.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_walk1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_walk2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_swim1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_swim2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_climb1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_climb2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_duck.png" alt="">&lt;/td>
+&lt;td>&lt;img src="pink/alienpink_jump.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="yellow/alienyellow_stand.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_front.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_walk1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_walk2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_swim1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_swim2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_climb1.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_climb2.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_hit.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_duck.png" alt="">&lt;/td>
+&lt;td>&lt;img src="yellow/alienyellow_jump.png" alt="">&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Games: Sounds</title><link>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/sounds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/games/02basics/assetsplatform/sounds/</guid><description>
+&lt;ul>
+&lt;li>&lt;a href="kenney_digitalaudio.zip">Digital Audio&lt;/a>&lt;/li>
+&lt;li>&lt;a href="kenney_interfacesounds.zip">Interface Sounds&lt;/a>&lt;/li>
+&lt;li>&lt;a href="kenney_uiaudio.zip">UI Audio&lt;/a>&lt;/li>
+&lt;li>&lt;a href="sci-fi-sounds.zip">Sci-Fi Sounds&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
