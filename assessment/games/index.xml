@@ -1,4 +1,36 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Game Design</title><link>https://tmcdigitech.github.io/8/assessment/games/</link><description>Recent content in Game Design on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 4: Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Game Design</title><link>https://tmcdigitech.github.io/8/assessment/games/</link><description>Recent content in Game Design on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 5: Game checkpoint (My First 2D Game)</title><link>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</guid><description>
+&lt;p>Using the examples worked through in class, you will need to develop the game to have the following features working:&lt;/p>
+&lt;ul>
+&lt;li>Player movement&lt;/li>
+&lt;li>Collectables&lt;/li>
+&lt;li>Score&lt;/li>
+&lt;li>Collision Events&lt;/li>
+&lt;li>Code with internal comments&lt;/li>
+&lt;/ul>
+&lt;h2 id="to-be-successful">To Be Successful&lt;/h2>
+&lt;ul>
+&lt;li>Include all the above items in your game and complete by the due date.&lt;/li>
+&lt;li>Include comments with all your Python code&lt;/li>
+&lt;li>Use appropriate programming structures (selection and iteration)&lt;/li>
+&lt;/ul>
+&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>Students will be guided through the programming skills and techniques required to complete their final Game Design Project. At the checkpoint students must demonstrate their first 2D Game meets all the requirements. Students will further develop their coding skills by developing a program that uses modules, selection, iteration and variables.&lt;/p>
+&lt;h2 id="learning-behaviours">Learning Behaviours&lt;/h2>
+&lt;p>This task provides the following opportunities to develop and demonstrate the Learner Behaviours:&lt;/p>
+&lt;dl>
+&lt;dt>Driven&lt;/dt>
+&lt;dd>Engages in Python coding challenges with persistence and learns from their mistakes and willingly completes the extension activities.&lt;/dd>
+&lt;dt>Curious&lt;/dt>
+&lt;dd>Explores and tests ideas by asking questions, researching and through trial and error when learning new skills or developing solutions.&lt;/dd>
+&lt;dt>Collaborator&lt;/dt>
+&lt;dd>Works in teams to solve problems and create new information. Willingly shares new skills and knowledge and assists others and seeks assistance from peers.&lt;/dd>
+&lt;dt>Connected&lt;/dt>
+&lt;dd>Connects programming constructs and data structures to real life applications and is able to explore and discuss issues and ethical implications of their solution.&lt;/dd>
+&lt;dt>Flexible Thinker&lt;/dt>
+&lt;dd>Applies new knowledge and skills to solve problems and is able to adapt and recognize patterns in other solutions.&lt;/dd>
+&lt;dt>Disciplined&lt;/dt>
+&lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project.&lt;/dd>
+&lt;/dl></description></item><item><title>Assessment: 4: Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</guid><description>
 &lt;p>&lt;img src="title.jpg" alt="Animal Quiz">&lt;/p>
 &lt;p>Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.&lt;/p>
 &lt;p>In this example, you&amp;rsquo;ll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. &lt;strong>Do not proceed to the next step until the previous one works. You&amp;rsquo;ll just make things harder for yourself!&lt;/strong>&lt;/p>
@@ -186,4 +218,4 @@ Your browser does not support the video tag. Watch video &lt;a href="codeAddScor
 &lt;li>Take away a point for each wrong answer&lt;/li>
 &lt;li>Limit the number of guesses for each question
 &lt;br/>&lt;em>Help: you will need a variable to store the number of guesses remaining. You will need to add another&lt;/em> &lt;code>if&lt;/code> &lt;em>statement to check the guesses remaining, as it is another way to leave the questions loop (i.e. you might get the answer right, or you might run out of guesses).&lt;/em>&lt;/li>
-&lt;/ol></description></item><item><title>Assessment: 5: Game checkpoint</title><link>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</guid><description/></item><item><title>Assessment: 6: Game project</title><link>https://tmcdigitech.github.io/8/assessment/games/6-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/6-project/</guid><description/></item></channel></rss>
+&lt;/ol></description></item><item><title>Assessment: 6: Game project</title><link>https://tmcdigitech.github.io/8/assessment/games/6-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/6-project/</guid><description/></item></channel></rss>
