@@ -1,4 +1,86 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Game Design</title><link>https://tmcdigitech.github.io/8/assessment/games/</link><description>Recent content in Game Design on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 5: Game checkpoint (My First 2D Game)</title><link>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Game Design</title><link>https://tmcdigitech.github.io/8/assessment/games/</link><description>Recent content in Game Design on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 4: Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-new/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-new/</guid><description>
+&lt;p>&lt;img src="title.jpg" alt="Animal Quiz">&lt;/p>
+&lt;p>Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.&lt;/p>
+&lt;p>In this example, you&amp;rsquo;ll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. &lt;strong>Do not proceed to the next step until the previous one works. You&amp;rsquo;ll just make things harder for yourself!&lt;/strong>&lt;/p>
+&lt;h2 id="what-happens">What happens&lt;/h2>
+&lt;p>The program asks the player some questions about animals. They get three chances to answer each question—you don’t want to make the quiz too difficult! Each correct answer will score points. At the end of the quiz, the program reveals the player’s final score.&lt;/p>
+&lt;h2 id="how-it-works">How it works&lt;/h2>
+&lt;p>This project makes use of a function—a block of code with a name that performs a specific task. A function lets you use the same code repeatedly, without having to type it all in every time. Python has lots of built-in functions, but it also lets you create functions of your own.&lt;/p>
+&lt;!-- &lt;div class="reveal deck_makingAQuiz" style="height: 20rem; margin: 20px 0;">
+&lt;div class="slides">
+&lt;section data-markdown="makingAQuiz.mds" data-separator="^\n\n\n" data-separator-vertical="^\n\n">&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;script>
+let makingAQuiz = new Reveal( document.querySelector( '.deck_makingAQuiz' ), {
+embedded: true,
+progress: false,
+keyboardCondition: 'focused',
+transition: 'slide',
+plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+} );
+makingAQuiz.on( 'slidechanged', () => {
+console.log( 'makingAQuiz slide changed' );
+} );
+makingAQuiz.initialize();
+&lt;/script> -->
+&lt;h2 id="1-design-the-main-algorithm">1. Design the main algorithm&lt;/h2>
+&lt;p>We know that we are going to build a quiz with lots of questions, but let&amp;rsquo;s start small, and worry about just one question, as it seems likely
+that the other questions we ask will have a lot of code in common. Let&amp;rsquo;s start with a basic algorithm.&lt;/p>
+&lt;video controls>
+&lt;source src="basicAlgorithm480.mp4" type="video/mp4">
+Your browser does not support the video tag. Watch video &lt;a href="basicAlgorithm480.mp4">here&lt;/a>.
+&lt;/video>
+&lt;p>We want to ask the user a question, get their guess, and check it against the right answer. If they are correct, we praise them (and we&amp;rsquo;ll give them a point later). If they get it wrong, we&amp;rsquo;ll let them try again.&lt;/p>
+&lt;p>We can test out our algorithm by starting at the Start and running our finger along the arrows to check that the behaviour is correct.&lt;/p>
+&lt;h2 id="2-some-code">2. Some code&lt;/h2>
+&lt;p>Now let&amp;rsquo;s turn that into some code.&lt;/p>
+&lt;video controls>
+&lt;source src="basicCode.mp4" type="video/mp4">
+Your browser does not support the video tag. Watch video &lt;a href="basicCode.mp4">here&lt;/a>.
+&lt;/video>
+&lt;p>We use &lt;code>print()&lt;/code> to talk to the user, and &lt;code>input()&lt;/code> to get responses back. So far our code doesn&amp;rsquo;t loop when the user guesses incorrectly.
+Let&amp;rsquo;s add that now.&lt;/p>
+&lt;h2 id="3-code-with-retries">3. Code with retries&lt;/h2>
+&lt;p>We can work out where to loop by working out the first and last bits of code that correspond with the parts of
+the algorithm in the loop, and indent them. We can then write &lt;code>while True:&lt;/code> at the start of the loop. We then need to work out which decision
+should end the loop, and put a &lt;code>break&lt;/code> there.&lt;/p>
+&lt;video controls>
+&lt;source src="codeWithLoop.mp4" type="video/mp4">
+Your browser does not support the video tag. Watch video &lt;a href="codeWithLoop.mp4">here&lt;/a>.
+&lt;/video>
+&lt;p>We can slightly simplify our code here. Because we break out of the loop if the guess is correct,
+we don&amp;rsquo;t need to put the case when the user is wrong inside an &lt;code>else&lt;/code> block.&lt;/p>
+&lt;video controls>
+&lt;source src="codeSimplifiedGuessElse.mp4" type="video/mp4">
+Your browser does not support the video tag. Watch video &lt;a href="codeSimplifiedGuessElse.mp4">here&lt;/a>.
+&lt;/video>
+&lt;p>This works because if you get as far as the new line 7 we know that you guessed wrong (otherwise we&amp;rsquo;d have
+broken out of the loop already). So we don&amp;rsquo;t need to check or clarify that.&lt;/p>
+&lt;h2 id="5-multiple-questions">5. Multiple questions&lt;/h2>
+&lt;p>Let&amp;rsquo;s add a couple more questions. We can copy/paste the code we need to make more questions. So what do we need to copy?&lt;/p>
+&lt;p>If you worked out it&amp;rsquo;s all of it, you&amp;rsquo;re right! We are going to extract this repeated part and make it into a function,
+so we can write the code once and reuse it multiple times.&lt;/p>
+&lt;video controls>
+&lt;source src="codeWithFunction.mp4" type="video/mp4">
+Your browser does not support the video tag. Watch video &lt;a href="codeWithFunction.mp4">here&lt;/a>.
+&lt;/video>
+&lt;p>By defining a function to do this work, we can add features or make changes to the function and see those reflected in every question—making those changes for every question by hand would be much more effort, and errors would be much more likely to creep in.&lt;/p>
+&lt;h2 id="6-keeping-score">6. Keeping score&lt;/h2>
+&lt;p>To keep track of the score, we will need a variable. For the moment we&amp;rsquo;ll give one point for a correct answer.&lt;/p>
+&lt;p>Since the score will exist across all questions, we need to declare the variable in the main body of the code, and tell the &lt;code>ask()&lt;/code> function to use that variable, rather than make up its own when refer to it.&lt;/p>
+&lt;video controls>
+&lt;source src="codeAddScore.mp4" type="video/mp4">
+Your browser does not support the video tag. Watch video &lt;a href="codeAddScore.mp4">here&lt;/a>.
+&lt;/video>
+&lt;p>Here we add a point to the score when we get a question right and print out the current score. Notice the use of &lt;a href="https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python">f-strings&lt;/a> here to print out a variable within other text.&lt;/p>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;ol>
+&lt;li>Give more points for a correct answer&lt;/li>
+&lt;li>Take away a point for each wrong answer&lt;/li>
+&lt;li>Limit the number of guesses for each question
+&lt;br/>&lt;em>Help: you will need a variable to store the number of guesses remaining. You will need to add another&lt;/em> &lt;code>if&lt;/code> &lt;em>statement to check the guesses remaining, as it is another way to leave the questions loop (i.e. you might get the answer right, or you might run out of guesses).&lt;/em>&lt;/li>
+&lt;/ol></description></item><item><title>Assessment: 5: Game checkpoint (My First 2D Game)</title><link>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</guid><description>
 &lt;p>Using the examples worked through in class, you will need to develop the game to have the following features working:&lt;/p>
 &lt;ul>
 &lt;li>Player movement&lt;/li>
@@ -30,7 +112,189 @@
 &lt;dd>Applies new knowledge and skills to solve problems and is able to adapt and recognize patterns in other solutions.&lt;/dd>
 &lt;dt>Disciplined&lt;/dt>
 &lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project.&lt;/dd>
-&lt;/dl></description></item><item><title>Assessment: 4: Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</guid><description>
+&lt;/dl></description></item><item><title>Assessment: 6: Game project</title><link>https://tmcdigitech.github.io/8/assessment/games/6-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/6-project/</guid><description>
+&lt;ul>
+&lt;li>&lt;a href="8digGamePlanningTemplate.docx">Game Planning Template&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>Students apply iterative project techniques to independently identify, deconstruct, design and create an interactive 2D game.&lt;/p>
+&lt;p>Using Python Pygame, design and develop code to create a 2D game. Document the process using an electronic workbook (OneNote) including guidelines for managing files, problem definition, design, algorithms, project plan, test plan and evaluation.&lt;/p>
+&lt;p>Project Brief
+Using Pygame Zero and Mu Editor, create a prototype 2D game that includes the following:&lt;/p>
+&lt;ul>
+&lt;li>Functions&lt;/li>
+&lt;li>If statements&lt;/li>
+&lt;li>Variables&lt;/li>
+&lt;li>Sprites and a background image&lt;/li>
+&lt;li>Keyboard input&lt;/li>
+&lt;li>Collisions&lt;/li>
+&lt;li>Collectables&lt;/li>
+&lt;li>Score and Lives&lt;/li>
+&lt;li>Sounds&lt;/li>
+&lt;/ul>
+&lt;h2 id="assessment-description">Assessment description&lt;/h2>
+&lt;p>You will need to consider the following points as part of your individual digital solution. Use &lt;strong>&lt;a href="8digGamePlanningTemplate.docx">this template&lt;/a>&lt;/strong> to document your development.&lt;/p>
+&lt;h3 id="problem-definition">Problem definition&lt;/h3>
+&lt;h4 id="describe-problems">Describe Problems&lt;/h4>
+&lt;p>Determining the nature and description of a problem to be solved.&lt;/p>
+&lt;ol>
+&lt;li>What is the &lt;strong>aim&lt;/strong> of the game?&lt;/li>
+&lt;li>What are the current &lt;strong>game ideas&lt;/strong>?&lt;/li>
+&lt;li>Identify the product client or clients (stakeholders). Who is the game for?&lt;/li>
+&lt;/ol>
+&lt;h4 id="constraints">Constraints&lt;/h4>
+&lt;p>Constraints describe the restricting factors we face when solving problems, and how we factor these
+into our planned solutions.&lt;/p>
+&lt;ol start="4">
+&lt;li>Describe the limitations or restricting factors your solution may face.&lt;/li>
+&lt;/ol>
+&lt;h4 id="decompose-problems">Decompose Problems&lt;/h4>
+&lt;p>Breaking a problem down into smaller, simpler problems that can be solved separately.&lt;/p>
+&lt;ol start="5">
+&lt;li>What are the individual elements of the problem that can be solved separately to make the main problem more approachable/solvable?&lt;/li>
+&lt;/ol>
+&lt;h4 id="project-plan">Project Plan&lt;/h4>
+&lt;p>Developing an approach or strategy to solve a problem or create a solution that considers the sources of data, resources available and potential timeframes or deadlines.&lt;/p>
+&lt;ol start="6">
+&lt;li>Develop a project plan based on time-scale and resources and key features of the project deliverables.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Project Plan&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Task&lt;/th>
+&lt;th>Completed by&lt;/th>
+&lt;th>Comments&lt;/th>
+&lt;th>Completed&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol start="7">
+&lt;li>What are the logical steps to &lt;strong>manage data files&lt;/strong> for the project?&lt;/li>
+&lt;/ol>
+&lt;h3 id="design">Design&lt;/h3>
+&lt;p>Design algorithms captures the solution design we undertake to develop an automated solution to a problem.&lt;/p>
+&lt;ol start="8">
+&lt;li>List the &lt;strong>sprites&lt;/strong> and sounds to be used with references?&lt;/li>
+&lt;li>Using a &lt;strong>storyboard&lt;/strong> design how the game will look; label and annotate.&lt;/li>
+&lt;li>Using a &lt;strong>data dictionary&lt;/strong> define the &lt;strong>components&lt;/strong> to be used in the game.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Component/Data Dictionary&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Component Type&lt;/th>
+&lt;th>Name&lt;/th>
+&lt;th>Purpose&lt;/th>
+&lt;th>Attributes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>(e.g. player, enemy, sound, collectable, background)&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>(e.g. size, position, name)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="algorithm-flowchartpesudocode">Algorithm Flowchart/Pesudocode&lt;/h4>
+&lt;ol start="11">
+&lt;li>Design the algorithms for the game (draw.io)&lt;/li>
+&lt;/ol>
+&lt;h4 id="create-the-game">Create the Game&lt;/h4>
+&lt;ol start="14">
+&lt;li>Develop the game and ensure you have the following items:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Functions&lt;/li>
+&lt;li>&lt;code>if&lt;/code> statements&lt;/li>
+&lt;li>Variables&lt;/li>
+&lt;li>Sprites and a background image&lt;/li>
+&lt;li>Keyboard input&lt;/li>
+&lt;li>Collisions&lt;/li>
+&lt;li>Collectables&lt;/li>
+&lt;li>Score&lt;/li>
+&lt;li>Sounds&lt;/li>
+&lt;/ul>
+&lt;h4 id="validate-and-test">Validate and test&lt;/h4>
+&lt;ol start="15">
+&lt;li>Test your game using the &lt;strong>testing plan&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Testing plan&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Feature&lt;/th>
+&lt;th>Testing method&lt;/th>
+&lt;th>Expected result&lt;/th>
+&lt;th>Status&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;td>…&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="end-user-testing">End user testing&lt;/h4>
+&lt;ol start="16">
+&lt;li>Ask &lt;em>(at least two)&lt;/em> other people to test your game and record their feedback and suggestions.&lt;/li>
+&lt;/ol>
+&lt;h4 id="final-code">Final code&lt;/h4>
+&lt;ol start="17">
+&lt;li>A print screen or print out of your final program is required with a detailed summary of how the program works. Make sure you have labelled the different sections of your program and have used internal comments.&lt;/li>
+&lt;/ol>
+&lt;h4 id="screencast">Screencast&lt;/h4>
+&lt;ol start="18">
+&lt;li>Record a screencast of your game working, demonstrating all of the features.&lt;/li>
+&lt;/ol>
+&lt;h3 id="evaluation">Evaluation&lt;/h3>
+&lt;p>Evaluates the process and user experience and makes suggestions for improvement.&lt;/p>
+&lt;ol start="19">
+&lt;li>Compare your initial storyboard design of your game to your final game and discuss the reasons for the changes/modification and how effective your game design is.&lt;/li>
+&lt;li>Did you successfully meet your project aim and the requirements of the task? What evidence supports your position?&lt;/li>
+&lt;li>Risk: If you did complete the project, explain the strategies you used to minimise the &amp;lsquo;risk&amp;rsquo; of non-completion.&lt;/li>
+&lt;li>Sustainability: During this project, there may have been times when you made changes to your design. Explain what changes you made and why you made the change?&lt;/li>
+&lt;li>What feedback did you obtain from the Year 7/8 students (end users)? Did your project meet their needs? Did they make any suggestions for improvement? Why and how would you consider implementing these suggestions?&lt;/li>
+&lt;li>Innovation &amp;amp; Enterprise: If you were to complete this project again, what improvements would you suggest and why?&lt;/li>
+&lt;li>Explain what potential your solution (or similar solution) has for further innovation and enterprise.&lt;/li>
+&lt;/ol></description></item><item><title>Assessment: [DEPR] Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</guid><description>
 &lt;p>&lt;img src="title.jpg" alt="Animal Quiz">&lt;/p>
 &lt;p>Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.&lt;/p>
 &lt;p>In this example, you&amp;rsquo;ll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. &lt;strong>Do not proceed to the next step until the previous one works. You&amp;rsquo;ll just make things harder for yourself!&lt;/strong>&lt;/p>
@@ -136,86 +400,4 @@ variable called &lt;code>still_guessing&lt;/code>.
 You then set the variable to True
 to show that the right answer hasn’t
 been found. It’s set to False when the
-player gets the right answer.&lt;/p></description></item><item><title>Assessment: 4: Animal quiz (new)</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-new/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-new/</guid><description>
-&lt;p>&lt;img src="title.jpg" alt="Animal Quiz">&lt;/p>
-&lt;p>Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.&lt;/p>
-&lt;p>In this example, you&amp;rsquo;ll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. &lt;strong>Do not proceed to the next step until the previous one works. You&amp;rsquo;ll just make things harder for yourself!&lt;/strong>&lt;/p>
-&lt;h2 id="what-happens">What happens&lt;/h2>
-&lt;p>The program asks the player some questions about animals. They get three chances to answer each question—you don’t want to make the quiz too difficult! Each correct answer will score points. At the end of the quiz, the program reveals the player’s final score.&lt;/p>
-&lt;h2 id="how-it-works">How it works&lt;/h2>
-&lt;p>This project makes use of a function—a block of code with a name that performs a specific task. A function lets you use the same code repeatedly, without having to type it all in every time. Python has lots of built-in functions, but it also lets you create functions of your own.&lt;/p>
-&lt;!-- &lt;div class="reveal deck_makingAQuiz" style="height: 20rem; margin: 20px 0;">
-&lt;div class="slides">
-&lt;section data-markdown="makingAQuiz.mds" data-separator="^\n\n\n" data-separator-vertical="^\n\n">&lt;/section>
-&lt;/div>
-&lt;/div>
-&lt;script>
-let makingAQuiz = new Reveal( document.querySelector( '.deck_makingAQuiz' ), {
-embedded: true,
-progress: false,
-keyboardCondition: 'focused',
-transition: 'slide',
-plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-} );
-makingAQuiz.on( 'slidechanged', () => {
-console.log( 'makingAQuiz slide changed' );
-} );
-makingAQuiz.initialize();
-&lt;/script> -->
-&lt;h2 id="1-design-the-main-algorithm">1. Design the main algorithm&lt;/h2>
-&lt;p>We know that we are going to build a quiz with lots of questions, but let&amp;rsquo;s start small, and worry about just one question, as it seems likely
-that the other questions we ask will have a lot of code in common. Let&amp;rsquo;s start with a basic algorithm.&lt;/p>
-&lt;video controls>
-&lt;source src="basicAlgorithm480.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="basicAlgorithm480.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>We want to ask the user a question, get their guess, and check it against the right answer. If they are correct, we praise them (and we&amp;rsquo;ll give them a point later). If they get it wrong, we&amp;rsquo;ll let them try again.&lt;/p>
-&lt;p>We can test out our algorithm by starting at the Start and running our finger along the arrows to check that the behaviour is correct.&lt;/p>
-&lt;h2 id="2-some-code">2. Some code&lt;/h2>
-&lt;p>Now let&amp;rsquo;s turn that into some code.&lt;/p>
-&lt;video controls>
-&lt;source src="basicCode.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="basicCode.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>We use &lt;code>print()&lt;/code> to talk to the user, and &lt;code>input()&lt;/code> to get responses back. So far our code doesn&amp;rsquo;t loop when the user guesses incorrectly.
-Let&amp;rsquo;s add that now.&lt;/p>
-&lt;h2 id="3-code-with-retries">3. Code with retries&lt;/h2>
-&lt;p>We can work out where to loop by working out the first and last bits of code that correspond with the parts of
-the algorithm in the loop, and indent them. We can then write &lt;code>while True:&lt;/code> at the start of the loop. We then need to work out which decision
-should end the loop, and put a &lt;code>break&lt;/code> there.&lt;/p>
-&lt;video controls>
-&lt;source src="codeWithLoop.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeWithLoop.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>We can slightly simplify our code here. Because we break out of the loop if the guess is correct,
-we don&amp;rsquo;t need to put the case when the user is wrong inside an &lt;code>else&lt;/code> block.&lt;/p>
-&lt;video controls>
-&lt;source src="codeSimplifiedGuessElse.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeSimplifiedGuessElse.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>This works because if you get as far as the new line 7 we know that you guessed wrong (otherwise we&amp;rsquo;d have
-broken out of the loop already). So we don&amp;rsquo;t need to check or clarify that.&lt;/p>
-&lt;h2 id="5-multiple-questions">5. Multiple questions&lt;/h2>
-&lt;p>Let&amp;rsquo;s add a couple more questions. We can copy/paste the code we need to make more questions. So what do we need to copy?&lt;/p>
-&lt;p>If you worked out it&amp;rsquo;s all of it, you&amp;rsquo;re right! We are going to extract this repeated part and make it into a function,
-so we can write the code once and reuse it multiple times.&lt;/p>
-&lt;video controls>
-&lt;source src="codeWithFunction.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeWithFunction.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>By defining a function to do this work, we can add features or make changes to the function and see those reflected in every question—making those changes for every question by hand would be much more effort, and errors would be much more likely to creep in.&lt;/p>
-&lt;h2 id="6-keeping-score">6. Keeping score&lt;/h2>
-&lt;p>To keep track of the score, we will need a variable. For the moment we&amp;rsquo;ll give one point for a correct answer.&lt;/p>
-&lt;p>Since the score will exist across all questions, we need to declare the variable in the main body of the code, and tell the &lt;code>ask()&lt;/code> function to use that variable, rather than make up its own when refer to it.&lt;/p>
-&lt;video controls>
-&lt;source src="codeAddScore.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeAddScore.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>Here we add a point to the score when we get a question right and print out the current score. Notice the use of &lt;a href="https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python">f-strings&lt;/a> here to print out a variable within other text.&lt;/p>
-&lt;h2 id="challenges">Challenges&lt;/h2>
-&lt;ol>
-&lt;li>Give more points for a correct answer&lt;/li>
-&lt;li>Take away a point for each wrong answer&lt;/li>
-&lt;li>Limit the number of guesses for each question
-&lt;br/>&lt;em>Help: you will need a variable to store the number of guesses remaining. You will need to add another&lt;/em> &lt;code>if&lt;/code> &lt;em>statement to check the guesses remaining, as it is another way to leave the questions loop (i.e. you might get the answer right, or you might run out of guesses).&lt;/em>&lt;/li>
-&lt;/ol></description></item><item><title>Assessment: 6: Game project</title><link>https://tmcdigitech.github.io/8/assessment/games/6-project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/6-project/</guid><description/></item></channel></rss>
+player gets the right answer.&lt;/p></description></item></channel></rss>
