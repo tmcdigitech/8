@@ -1,6 +1,7 @@
 ---
-title: "4: Animal quiz (new)"
+title: "4: Animal quiz"
 reveal: true
+weight: 10
 ---
 ![Animal Quiz](title.jpg)
 
