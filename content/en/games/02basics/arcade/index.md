@@ -73,7 +73,7 @@ Make the box chase the alien.
 
 Print number of times the box hits the alien (i.e. the score).
 
-5.2. Chase
+## 5.2. Chase
 Instead of moving constantly to the right we can make the movement conditional with an if statement so the box chases the alien. Most of this code is copied from Program 5.1. New lines are highlighted. We have also changed what happens when the box catches the alien: the program now exits and you must run it again to play again. This may not be what you want in your game!
 
 Program 5.2 Alien chase
