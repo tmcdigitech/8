@@ -508,8 +508,8 @@
 &lt;p>Make the box chase the alien.&lt;/p>
 &lt;h3 id="exercise-5">Exercise&lt;/h3>
 &lt;p>Print number of times the box hits the alien (i.e. the score).&lt;/p>
-&lt;p>5.2. Chase
-Instead of moving constantly to the right we can make the movement conditional with an if statement so the box chases the alien. Most of this code is copied from Program 5.1. New lines are highlighted. We have also changed what happens when the box catches the alien: the program now exits and you must run it again to play again. This may not be what you want in your game!&lt;/p>
+&lt;h2 id="52-chase">5.2. Chase&lt;/h2>
+&lt;p>Instead of moving constantly to the right we can make the movement conditional with an if statement so the box chases the alien. Most of this code is copied from Program 5.1. New lines are highlighted. We have also changed what happens when the box catches the alien: the program now exits and you must run it again to play again. This may not be what you want in your game!&lt;/p>
 &lt;p>Program 5.2 Alien chase
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
 &lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
