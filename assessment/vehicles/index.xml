@@ -1,4 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Autonomous Vehicles</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/</link><description>Recent content in Autonomous Vehicles on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/vehicles/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 1: Follow the line</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/1-follow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/1-follow/</guid><description>
+&lt;ul>
+&lt;li>&lt;a href="FollowTheLine.pptx">Submission template&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>&lt;strong>In teams of two&lt;/strong>, design algorithms using flowcharts to create an automated, driverless vehicle that can:&lt;/p>
 &lt;ul>
 &lt;li>stop at a line,&lt;/li>
@@ -62,6 +65,9 @@ Simulate a vehicle’s behaviour at traffic lights by having their wheeled robot
 &lt;dt>Disciplined&lt;/dt>
 &lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project&lt;/dd>
 &lt;/dl></description></item><item><title>Assessment: 2: Obstacle course</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/2-obstacle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/2-obstacle/</guid><description>
+&lt;ul>
+&lt;li>&lt;a href="ObstacleCourse.pptx">Submission template&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>&lt;strong>In teams of two&lt;/strong>, you will design algorithms using flowcharts to create an automated, driverless vehicle that can navigate an obstacle course. You will then adapt your code to use a touch sensor and an ultrasonic sensor to complete the same course, and make comparisons between the solutions.&lt;/p>
 &lt;p>This challenge features a sequence of turns that the robot must perform in order to get to the &amp;ldquo;end&amp;rdquo; of the course. The robot must begin at the starting point and get to the goal area by completing turning and forward movement behaviours. The robot must &lt;em>not&lt;/em> cross any lines.&lt;/p>
 &lt;p>&lt;img src="https://pybricks.com/ev3-micropython/_images/robot_educator_ultrasonic.jpg" alt="EV3 vehicle with ultrasonic sensor">&lt;/p>
