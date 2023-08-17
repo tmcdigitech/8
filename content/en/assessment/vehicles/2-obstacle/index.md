@@ -1,6 +1,9 @@
 ---
 title: "2: Obstacle course"
 ---
+
+- [Submission template](ObstacleCourse.pptx)
+
 **In teams of two**, you will design algorithms using flowcharts to create an automated, driverless vehicle that can navigate an obstacle course. You will then adapt your code to use a touch sensor and an ultrasonic sensor to complete the same course, and make comparisons between the solutions.
 
 This challenge features a sequence of turns that the robot must perform in order to get to the "end" of the course. The robot must begin at the starting point and get to the goal area by completing turning and forward movement behaviours. The robot must *not* cross any lines.

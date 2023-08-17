@@ -1,6 +1,9 @@
 ---
 title: "1: Follow the line"
 ---
+
+- [Submission template](FollowTheLine.pptx)
+
 **In teams of two**, design algorithms using flowcharts to create an automated, driverless vehicle that can:
 - stop at a line,
 - follow a line, and
