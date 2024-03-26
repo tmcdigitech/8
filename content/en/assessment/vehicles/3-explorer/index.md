@@ -1,6 +1,9 @@
 ---
 title: "3: Robotics explorer"
 ---
+
+- [Submission template](RoboticsExplorer.pptx)
+
 {{< alert title="Project brief" color="primary" >}}
 As a mining company, we are seeking a solution for carrying out tasks in hazardous areas of our mines without risking the safety of our workers. We are interested in an autonomous robot that can navigate through confined spaces and avoid obstacles, such as rocks or machinery. It should also have the ability to carry a small camera or mobile phone. Could your team design and program such a robot for us?
 {{< /alert >}}
