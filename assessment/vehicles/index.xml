@@ -126,6 +126,9 @@ Simulate a vehicle’s behaviour at traffic lights by having their wheeled robot
 &lt;dt>Disciplined&lt;/dt>
 &lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project&lt;/dd>
 &lt;/dl></description></item><item><title>Assessment: 3: Robotics explorer</title><link>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/vehicles/3-explorer/</guid><description>
+&lt;ul>
+&lt;li>&lt;a href="RoboticsExplorer.pptx">Submission template&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">Project brief&lt;/h4>
 As a mining company, we are seeking a solution for carrying out tasks in hazardous areas of our mines without risking the safety of our workers. We are interested in an autonomous robot that can navigate through confined spaces and avoid obstacles, such as rocks or machinery. It should also have the ability to carry a small camera or mobile phone. Could your team design and program such a robot for us?
