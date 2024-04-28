@@ -1,5 +1,5 @@
 ---
-title: "4: Animal quiz"
+title: "Tutorial"
 reveal: true
 weight: 10
 ---
@@ -7,7 +7,9 @@ weight: 10
 
 Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.
 
-In this example, you'll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. **Do not proceed to the next step until the previous one works. You'll just make things harder for yourself!**
+In this example, you'll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs.
+
+{{< alert title="Test your code as you go" color="danger" >}} Do not move on to the next step until the previous one works. You'll just make things harder for yourself! If you can't work out why your code doesn't work, seek help from someone else (or your teacher).{{< /alert >}}
 
 ## What happens 
 The program asks the player some questions about animals. They get three chances to answer each question—you don’t want to make the quiz too difficult! Each correct answer will score points. At the end of the quiz, the program reveals the player’s final score.
