@@ -1,86 +1,56 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Game Design</title><link>https://tmcdigitech.github.io/8/assessment/games/</link><description>Recent content in Game Design on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 4: Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-new/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-new/</guid><description>
-&lt;p>&lt;img src="title.jpg" alt="Animal Quiz">&lt;/p>
-&lt;p>Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.&lt;/p>
-&lt;p>In this example, you&amp;rsquo;ll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. &lt;strong>Do not proceed to the next step until the previous one works. You&amp;rsquo;ll just make things harder for yourself!&lt;/strong>&lt;/p>
-&lt;h2 id="what-happens">What happens&lt;/h2>
-&lt;p>The program asks the player some questions about animals. They get three chances to answer each question—you don’t want to make the quiz too difficult! Each correct answer will score points. At the end of the quiz, the program reveals the player’s final score.&lt;/p>
-&lt;h2 id="how-it-works">How it works&lt;/h2>
-&lt;p>This project makes use of a function—a block of code with a name that performs a specific task. A function lets you use the same code repeatedly, without having to type it all in every time. Python has lots of built-in functions, but it also lets you create functions of your own.&lt;/p>
-&lt;!-- &lt;div class="reveal deck_makingAQuiz" style="height: 20rem; margin: 20px 0;">
-&lt;div class="slides">
-&lt;section data-markdown="makingAQuiz.mds" data-separator="^\n\n\n" data-separator-vertical="^\n\n">&lt;/section>
-&lt;/div>
-&lt;/div>
-&lt;script>
-let makingAQuiz = new Reveal( document.querySelector( '.deck_makingAQuiz' ), {
-embedded: true,
-progress: false,
-keyboardCondition: 'focused',
-transition: 'slide',
-plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-} );
-makingAQuiz.on( 'slidechanged', () => {
-console.log( 'makingAQuiz slide changed' );
-} );
-makingAQuiz.initialize();
-&lt;/script> -->
-&lt;h2 id="1-design-the-main-algorithm">1. Design the main algorithm&lt;/h2>
-&lt;p>We know that we are going to build a quiz with lots of questions, but let&amp;rsquo;s start small, and worry about just one question, as it seems likely
-that the other questions we ask will have a lot of code in common. Let&amp;rsquo;s start with a basic algorithm.&lt;/p>
-&lt;video controls>
-&lt;source src="basicAlgorithm480.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="basicAlgorithm480.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>We want to ask the user a question, get their guess, and check it against the right answer. If they are correct, we praise them (and we&amp;rsquo;ll give them a point later). If they get it wrong, we&amp;rsquo;ll let them try again.&lt;/p>
-&lt;p>We can test out our algorithm by starting at the Start and running our finger along the arrows to check that the behaviour is correct.&lt;/p>
-&lt;h2 id="2-some-code">2. Some code&lt;/h2>
-&lt;p>Now let&amp;rsquo;s turn that into some code.&lt;/p>
-&lt;video controls>
-&lt;source src="basicCode.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="basicCode.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>We use &lt;code>print()&lt;/code> to talk to the user, and &lt;code>input()&lt;/code> to get responses back. So far our code doesn&amp;rsquo;t loop when the user guesses incorrectly.
-Let&amp;rsquo;s add that now.&lt;/p>
-&lt;h2 id="3-code-with-retries">3. Code with retries&lt;/h2>
-&lt;p>We can work out where to loop by working out the first and last bits of code that correspond with the parts of
-the algorithm in the loop, and indent them. We can then write &lt;code>while True:&lt;/code> at the start of the loop. We then need to work out which decision
-should end the loop, and put a &lt;code>break&lt;/code> there.&lt;/p>
-&lt;video controls>
-&lt;source src="codeWithLoop.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeWithLoop.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>We can slightly simplify our code here. Because we break out of the loop if the guess is correct,
-we don&amp;rsquo;t need to put the case when the user is wrong inside an &lt;code>else&lt;/code> block.&lt;/p>
-&lt;video controls>
-&lt;source src="codeSimplifiedGuessElse.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeSimplifiedGuessElse.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>This works because if you get as far as the new line 7 we know that you guessed wrong (otherwise we&amp;rsquo;d have
-broken out of the loop already). So we don&amp;rsquo;t need to check or clarify that.&lt;/p>
-&lt;h2 id="5-multiple-questions">5. Multiple questions&lt;/h2>
-&lt;p>Let&amp;rsquo;s add a couple more questions. We can copy/paste the code we need to make more questions. So what do we need to copy?&lt;/p>
-&lt;p>If you worked out it&amp;rsquo;s all of it, you&amp;rsquo;re right! We are going to extract this repeated part and make it into a function,
-so we can write the code once and reuse it multiple times.&lt;/p>
-&lt;video controls>
-&lt;source src="codeWithFunction.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeWithFunction.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>By defining a function to do this work, we can add features or make changes to the function and see those reflected in every question—making those changes for every question by hand would be much more effort, and errors would be much more likely to creep in.&lt;/p>
-&lt;h2 id="6-keeping-score">6. Keeping score&lt;/h2>
-&lt;p>To keep track of the score, we will need a variable. For the moment we&amp;rsquo;ll give one point for a correct answer.&lt;/p>
-&lt;p>Since the score will exist across all questions, we need to declare the variable in the main body of the code, and tell the &lt;code>ask()&lt;/code> function to use that variable, rather than make up its own when refer to it.&lt;/p>
-&lt;video controls>
-&lt;source src="codeAddScore.mp4" type="video/mp4">
-Your browser does not support the video tag. Watch video &lt;a href="codeAddScore.mp4">here&lt;/a>.
-&lt;/video>
-&lt;p>Here we add a point to the score when we get a question right and print out the current score. Notice the use of &lt;a href="https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python">f-strings&lt;/a> here to print out a variable within other text.&lt;/p>
-&lt;h2 id="challenges">Challenges&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>8 Digital Tech – Game Design</title><link>https://tmcdigitech.github.io/8/assessment/games/</link><description>Recent content in Game Design on 8 Digital Tech</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://tmcdigitech.github.io/8/assessment/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment: 4: Animal Quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</guid><description>
+&lt;h2 id="task-description">Task Description&lt;/h2>
+&lt;p>Students will further develop their coding skills by developing a program that asks the player some questions about animal and a topic of their choice. They get three chances to answer each question—you don’t want to make the quiz too difficult! Each correct answer will score one point. At the end of the quiz, the program reveals the player’s final score.&lt;/p>
+&lt;p>You will need to follow the &lt;a href="https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/tutorial/">Animal Quiz Tutorial&lt;/a> and complete the following items:&lt;/p>
 &lt;ol>
-&lt;li>Give more points for a correct answer&lt;/li>
-&lt;li>Take away a point for each wrong answer&lt;/li>
-&lt;li>Limit the number of guesses for each question
-&lt;br/>&lt;em>Help: you will need a variable to store the number of guesses remaining. You will need to add another&lt;/em> &lt;code>if&lt;/code> &lt;em>statement to check the guesses remaining, as it is another way to leave the questions loop (i.e. you might get the answer right, or you might run out of guesses).&lt;/em>&lt;/li>
-&lt;/ol></description></item><item><title>Assessment: 5: Game checkpoint (My First 2D Game)</title><link>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</guid><description>
+&lt;li>Complete the Animal Quiz with 3 or more questions.&lt;/li>
+&lt;li>Give the user 3 chances to answer the question.&lt;/li>
+&lt;li>Make another quiz on your own topic. Create a quiz on a different subject, such as general knowledge, sports, movies, or music.&lt;/li>
+&lt;li>Include multiple-choice questions.&lt;/li>
+&lt;li>Give a better score for fewer attempts. Reward the player for getting the answer right with fewer guesses. Give 3 points if they get it in one try, 2 points for needing two attempts, and 1 point for using all three chances.&lt;/li>
+&lt;li>Provide feedback based on the player’s final score:
+&lt;ul>
+&lt;li>“Well Done, you got them all correct, you must be smart!”,&lt;/li>
+&lt;li>“Almost there, better luck next time.” or&lt;/li>
+&lt;li>“You really need to study!”.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="to-be-successful">To Be Successful &lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Accurately and independently complete all 6 items above and upload to SEQTA:&lt;/p>
+&lt;ul>
+&lt;li>your animal quiz code as a python file,&lt;/li>
+&lt;li>your own quiz (different topic) as a python file, and&lt;/li>
+&lt;li>a transcript of your code running (i.e. run it and copy all the text output) named &lt;code>transcript.txt&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Include comments with your Python code&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use the correct programming structure (selection and iteration)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>Students will further develop their coding skills by developing a program that uses modules, selection, iteration and variables.&lt;/p>
+&lt;h2 id="learning-behaviours">Learning Behaviours&lt;/h2>
+&lt;p>This task provides the following opportunities to develop and demonstrate the Learner Behaviours:&lt;/p>
+&lt;dl>
+&lt;dt>Driven&lt;/dt>
+&lt;dd>Engages in Python coding challenges with persistence and learns from their mistakes and willingly completes the extension activities.&lt;/dd>
+&lt;dt>Curious&lt;/dt>
+&lt;dd>Explores and tests ideas by asking questions, researching and through trial and error when learning new skills or developing solutions &lt;/dd>
+&lt;dt>Collaborators&lt;/dt>
+&lt;dd>Works in teams to solve problems and create new information. Willingly shares new skills and knowledge and assists others and seeks assistance from peers.&lt;/dd>
+&lt;dt>Connected&lt;/dt>
+&lt;dd>Connects programming constructs and data structures to real life applications and is able to explore and discuss issues and ethical implications of their solution &lt;/dd>
+&lt;dt>Flexible Thinkers&lt;/dt>
+&lt;dd>Applies new knowledge and skills to solve problems and is able to adapt and recognize patterns in other solutions&lt;/dd>
+&lt;dt>Disciplined&lt;/dt>
+&lt;dd>Motivated learner who demonstrates initiative by following a project management process to complete a project&lt;/dd>
+&lt;/dl></description></item><item><title>Assessment: 5: Game checkpoint (My First 2D Game)</title><link>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/5-checkpoint/</guid><description>
 &lt;p>Using the examples worked through in class, you will need to develop the game to have the following features working:&lt;/p>
 &lt;ul>
 &lt;li>Player movement&lt;/li>
@@ -294,7 +264,7 @@ into our planned solutions.&lt;/p>
 &lt;li>What feedback did you obtain from the Year 7/8 students (end users)? Did your project meet their needs? Did they make any suggestions for improvement? Why and how would you consider implementing these suggestions?&lt;/li>
 &lt;li>Innovation &amp;amp; Enterprise: If you were to complete this project again, what improvements would you suggest and why?&lt;/li>
 &lt;li>Explain what potential your solution (or similar solution) has for further innovation and enterprise.&lt;/li>
-&lt;/ol></description></item><item><title>Assessment: [DEPR] Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz/</guid><description>
+&lt;/ol></description></item><item><title>Assessment: [DEPR] Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-old/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-old/</guid><description>
 &lt;p>&lt;img src="title.jpg" alt="Animal Quiz">&lt;/p>
 &lt;p>Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.&lt;/p>
 &lt;p>In this example, you&amp;rsquo;ll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. &lt;strong>Do not proceed to the next step until the previous one works. You&amp;rsquo;ll just make things harder for yourself!&lt;/strong>&lt;/p>
