@@ -264,7 +264,23 @@ into our planned solutions.&lt;/p>
 &lt;li>What feedback did you obtain from the Year 7/8 students (end users)? Did your project meet their needs? Did they make any suggestions for improvement? Why and how would you consider implementing these suggestions?&lt;/li>
 &lt;li>Innovation &amp;amp; Enterprise: If you were to complete this project again, what improvements would you suggest and why?&lt;/li>
 &lt;li>Explain what potential your solution (or similar solution) has for further innovation and enterprise.&lt;/li>
-&lt;/ol></description></item><item><title>Assessment: [DEPR] Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-old/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-old/</guid><description>
+&lt;/ol></description></item><item><title>Assessment: 7: Game analysis</title><link>https://tmcdigitech.github.io/8/assessment/games/7-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/7-analysis/</guid><description>
+&lt;ul>
+&lt;li>&lt;a href="gameAnalysisTemplate.pptx">Game Analysis Template&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="task-description">Task description&lt;/h2>
+&lt;p>Select two games and analyse the advantages and disadvantages and conduct a decomposition of constructs used in the games. Using the Game Analysis Template record the following for two simple games:&lt;/p>
+&lt;ul>
+&lt;li>type of game,&lt;/li>
+&lt;li>goal of the game,&lt;/li>
+&lt;li>positive and negative features (pros and cons),&lt;/li>
+&lt;li>game observations for controlling the character, scoring and UI,&lt;/li>
+&lt;li>possible constructs for each component, using pseudocode.&lt;/li>
+&lt;/ul>
+&lt;h2 id="ai-tools-use-">AI tools use 🚦&lt;/h2>
+&lt;p>&lt;strong>🟠 AI Assisted Learning&lt;/strong>: Permitted to use AI tools for specific defined sections within the assessment.  Ask your teacher.&lt;/p>
+&lt;h2 id="to-be-successful">To be successful &lt;/h2>
+&lt;p>Complete the Game Analysis Template in detail for two games.&lt;/p></description></item><item><title>Assessment: [DEPR] Animal quiz</title><link>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-old/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/8/assessment/games/4-animalquiz-old/</guid><description>
 &lt;p>&lt;img src="title.jpg" alt="Animal Quiz">&lt;/p>
 &lt;p>Are you a fan of quizzes? Would you like to make one yourself? In this project, you’ll build an animal quiz. Even though the questions are about animals, this project can be easily modified to be about any other topic.&lt;/p>
 &lt;p>In this example, you&amp;rsquo;ll see bits of code with annotations. The code in black is new code to be added. The code in grey is existing code; use this to work out where to add the new lines of code. The instructions will ask you to run the code at various points. Make sure you do this and that the code successfully runs. &lt;strong>Do not proceed to the next step until the previous one works. You&amp;rsquo;ll just make things harder for yourself!&lt;/strong>&lt;/p>
