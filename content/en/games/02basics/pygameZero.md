@@ -36,10 +36,10 @@ def draw():
 pgzrun.go() # Must be last line
 ```
 
-{{< hint info >}}
+{{< alert >}}
 **Why the double brackets?**\
 Notice that we had to use two sets of brackets in that example to set the colour of the background. In Pygame Zero, colours are always written as a set of three numbers like this: `(0, 130, 255)`, which in Python is called a **tuple** (rhyming with 'couple'). A tuple is indicated with round brackets. But the function also takes a set of round brackets, so we know it is a function. So the outer set of brackets belongs to the `fill()` function call, and the inside set to the tuple for the colour.
-{{< /hint >}}
+{{< /alert >}}
 
 ## Basic shapes
 
