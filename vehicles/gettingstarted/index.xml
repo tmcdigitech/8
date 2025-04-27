@@ -7,7 +7,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>Find and install &lt;strong>Visual Studio Code&lt;/strong> (NOT Visual Studio Community):
-&lt;img src="Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code logo">&lt;/p>
+&lt;img src="../Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code logo">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Install the &lt;strong>EV3 MicroPython&lt;/strong> extension
